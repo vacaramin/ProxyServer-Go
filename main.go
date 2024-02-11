@@ -27,6 +27,7 @@ func main() {
 			continue
 		}
 		go handleConnection(conn)
+		//go handleConnection2(conn)
 	}
 }
 func handleConnection(conn net.Conn) {
@@ -67,4 +68,8 @@ func handleConnection(conn net.Conn) {
 
 	// Handle the response from the target server
 	// You can forward the response back to the client or process it as needed
+}
+
+func handleConnection2(conn net.Conn) {
+
 }
